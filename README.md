@@ -52,3 +52,28 @@ CREATE TABLE [dbo].[Addresses] (
 - modelsにAddressBookModel.edmxファイルが生成される
 - AddressBookMode.edmxを展開してAddressBookModel.ttの中にAddress.csとGroup.csがある
     - これらがテーブルから自動生成されたPOCOになる
+    - これらのモデルクラスは編集してはいけない
+- 各プロパティにディスプレイネームを指定したい場合はモデルクラスを編集してはいけないのでメタクラスを作る
+    - `AddressMetadata.cs`作成(Models右クリック->追加->クラス)
+        - namespaceが一致していればpartial classで定義できる
+    - `GroupMetadata.cs`作成して同じことする
+- EntityFrameworkとEntityFramework.jaのversionが一致するようにEntityFrameworkのバージョン落とす
+    - 6.2.0でそろえた
+    - この後コントローラー生成するときにエラー出て解消できなかった
+    - あきらめてEntityFramework.jaをアンインストールしてEntityFrameworkだけで進めた
+
+### Controllerの作成
+- Controllerを作成する前に一度ソリューションのビルドを行う
+- address,groupに対してコントローラー作成
+- ビュー修正
+
+### 入力制限の実装
+- enum型で都道府県管理
+    - model,Controller,viewをそれぞれ編集
+- 正規表現で入力制限
+    - AddressMetadataにRegularExpressionアノテーションつける
+        - メールアドレスについては正規表現でチェックすると複雑な式になる
+        - そのためDataType.EmailAddressを使う
+- 動作確認した
+
+### 検索機能の実装
