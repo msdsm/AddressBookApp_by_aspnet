@@ -77,3 +77,18 @@ CREATE TABLE [dbo].[Addresses] (
 - 動作確認した
 
 ### 検索機能の実装
+- SerchViewModel作成
+    - カナ検索のため
+- Controller修正
+    - Searchメソッド実装
+- view作成
+- RouteConfigと共通レイアウト編集
+    - IndexではなくSearchに変更
+- 動作確認のために疑似個人情報作成サイトからcsvファイル作成
+- Visual Studioでファイル->新規プロジェクトの作成->asp.netコマンドコンソールを選択
+- ソリューションを作成するのではなくaddressbookappを選択
+- nugetからentityframeworkとcsvhelperインストール
+- Program.csでcsvをデータベースに登録する処理実装
+- デバッグから実行してデータベース確認
+### 動作確認
+- 検索できた

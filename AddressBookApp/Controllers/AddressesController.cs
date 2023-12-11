@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Xml.Serialization;
 using AddressBookApp.Models;
 
 namespace AddressBookApp.Controllers
@@ -127,6 +128,20 @@ namespace AddressBookApp.Controllers
             db.Addresses.Remove(address);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public ActionResult Search([Bind(Include="Kana")] SearchViewModel model)
+        {
+            if(!string.IsNullOrEmpty(model.Kana))
+            {
+                var list = db.Addresses.Where(item => item.Kana.IndexOf(model.Kana) == 0).ToList();
+                model.Addresses = list;
+            }
+            else
+            {
+                model.Addresses = db.Addresses.ToList();
+            }
+            return View(model);
         }
 
         protected override void Dispose(bool disposing)

@@ -80,3 +80,17 @@ C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\obj\Debug\Addre
 C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\obj\Debug\AddressBookApp.csproj.CopyComplete
 C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\obj\Debug\AddressBookApp.dll
 C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\obj\Debug\AddressBookApp.pdb
+C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\bin\Microsoft.Bcl.HashCode.dll
+C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\bin\System.Buffers.dll
+C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\bin\System.Memory.dll
+C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\bin\System.Numerics.Vectors.dll
+C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\bin\Microsoft.Bcl.HashCode.xml
+C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\bin\System.Buffers.xml
+C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\bin\System.Memory.xml
+C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\bin\System.Numerics.Vectors.xml
+C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\masuda.yuya\Desktop\Udemy\AddressBookApp\AddressBookApp\bin\System.Threading.Tasks.Extensions.xml
